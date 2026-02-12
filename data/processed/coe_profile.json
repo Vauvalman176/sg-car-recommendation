@@ -1,0 +1,204 @@
+{
+  "name": "COE Bidding Results",
+  "profiled_at": "2026-01-30T19:16:31.998487",
+  "total_rows": 1900,
+  "total_columns": 11,
+  "columns": {
+    "_id": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 1910,
+      "mean": 950.5,
+      "stddev": 548.63,
+      "min": 1,
+      "max": 1900,
+      "percentile_25": 457,
+      "percentile_50": 939,
+      "percentile_75": 1407
+    },
+    "month": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 187,
+      "top_values": [
+        {
+          "value": "2010-03",
+          "count": 10
+        },
+        {
+          "value": "2010-05",
+          "count": 10
+        },
+        {
+          "value": "2010-07",
+          "count": 10
+        },
+        {
+          "value": "2010-11",
+          "count": 10
+        },
+        {
+          "value": "2011-11",
+          "count": 10
+        }
+      ]
+    },
+    "bidding_no": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 2,
+      "mean": 1.5,
+      "stddev": 0.5,
+      "min": 1,
+      "max": 2,
+      "percentile_25": 1,
+      "percentile_50": 1,
+      "percentile_75": 2
+    },
+    "vehicle_class": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 5,
+      "top_values": [
+        {
+          "value": "Category D",
+          "count": 380
+        },
+        {
+          "value": "Category A",
+          "count": 380
+        },
+        {
+          "value": "Category C",
+          "count": 380
+        },
+        {
+          "value": "Category E",
+          "count": 380
+        },
+        {
+          "value": "Category B",
+          "count": 380
+        }
+      ]
+    },
+    "quota": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 841,
+      "mean": 568.08,
+      "stddev": 419.38,
+      "min": 43,
+      "max": 2272,
+      "percentile_25": 283,
+      "percentile_50": 430,
+      "percentile_75": 650
+    },
+    "bids_success": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 816,
+      "top_values": [
+        {
+          "value": "356",
+          "count": 13
+        },
+        {
+          "value": "360",
+          "count": 12
+        },
+        {
+          "value": "353",
+          "count": 10
+        },
+        {
+          "value": "528",
+          "count": 9
+        },
+        {
+          "value": "256",
+          "count": 9
+        }
+      ]
+    },
+    "bids_received": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 1161,
+      "top_values": [
+        {
+          "value": "486",
+          "count": 7
+        },
+        {
+          "value": "509",
+          "count": 7
+        },
+        {
+          "value": "430",
+          "count": 7
+        },
+        {
+          "value": "723",
+          "count": 6
+        },
+        {
+          "value": "635",
+          "count": 6
+        }
+      ]
+    },
+    "premium": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 1612,
+      "mean": 51830.42,
+      "stddev": 33497.55,
+      "min": 852,
+      "max": 158004,
+      "percentile_25": 27589,
+      "percentile_50": 49500,
+      "percentile_75": 72939
+    },
+    "coe_year": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 17,
+      "mean": 2017.51,
+      "stddev": 4.67,
+      "min": 2010,
+      "max": 2026,
+      "percentile_25": 2013,
+      "percentile_50": 2017,
+      "percentile_75": 2021
+    },
+    "coe_month": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 12,
+      "mean": 6.49,
+      "stddev": 3.49,
+      "min": 1,
+      "max": 12,
+      "percentile_25": 3,
+      "percentile_50": 6,
+      "percentile_75": 9
+    },
+    "ingestion_timestamp": {
+      "data_type": "DateType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 1
+    }
+  }
+}

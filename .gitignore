@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# PySpark / Java
+*.jar
+metastore_db/
+derby.log
+spark-warehouse/
+
+# Data files (too large for GitHub)
+data/processed/cars.parquet/
+data/processed/coe.parquet/
+data/pbda_output/models/
+data/pbda_output/predictions.parquet/
+data/pbda_output/feature_importance.json
+webscrap_sgcarmart/data/*.csv
+webscrap_sgcarmart/*.log
+webscrap_sgcarmart/*.txt
+data/raw/
+data/coe/*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.venv/
+env/
+venv/
+.claude/

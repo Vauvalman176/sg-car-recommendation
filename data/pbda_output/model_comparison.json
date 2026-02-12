@@ -1,0 +1,249 @@
+{
+  "compared_at": "2026-02-12T16:32:25.199093",
+  "best_model": "LinearRegression",
+  "models": {
+    "LinearRegression": {
+      "train_metrics": {
+        "rmse": 38129.1585989604,
+        "mae": 24948.008569953286,
+        "r2": 0.9145799509463073,
+        "mse": 1453832735.4646757
+      },
+      "test_metrics": {
+        "rmse": 63397.305404810555,
+        "mae": 30374.371597522197,
+        "r2": 0.8740540428810998,
+        "mse": 4019218332.5908217
+      },
+      "cv_results": {
+        "avg_rmse": 44424.22706798467,
+        "num_folds": 5
+      },
+      "feature_importance": [
+        {
+          "feature": "arf_double",
+          "importance": 141684.62670243985
+        },
+        {
+          "feature": "omv",
+          "importance": 23821.848718190995
+        },
+        {
+          "feature": "coe_premium_at_reg",
+          "importance": 18196.04131588347
+        },
+        {
+          "feature": "road_tax",
+          "importance": 16886.60852966215
+        },
+        {
+          "feature": "power_to_weight",
+          "importance": 9835.885356865601
+        },
+        {
+          "feature": "coe_months_left",
+          "importance": 9449.347409422
+        },
+        {
+          "feature": "car_age_years",
+          "importance": 9446.253916737105
+        },
+        {
+          "feature": "mileage",
+          "importance": 9120.258213670713
+        },
+        {
+          "feature": "coe",
+          "importance": 8963.590385026891
+        },
+        {
+          "feature": "engine_cap",
+          "importance": 8758.208066333438
+        },
+        {
+          "feature": "feature_19",
+          "importance": 6679.586726934815
+        },
+        {
+          "feature": "type_of_vehicle_vec",
+          "importance": 3781.563034932883
+        },
+        {
+          "feature": "feature_22",
+          "importance": 3734.3261892937085
+        },
+        {
+          "feature": "curb_weight",
+          "importance": 3223.059118089939
+        },
+        {
+          "feature": "feature_27",
+          "importance": 3187.150240959603
+        }
+      ],
+      "is_best": true
+    },
+    "RandomForest": {
+      "train_metrics": {
+        "rmse": 23222.295368614345,
+        "mae": 10556.005311690897,
+        "r2": 0.9683148576747828,
+        "mse": 539275002.1871672
+      },
+      "test_metrics": {
+        "rmse": 74506.7913029057,
+        "mae": 22140.847084815494,
+        "r2": 0.826046026444181,
+        "mse": 5551261950.254745
+      },
+      "cv_results": {
+        "avg_rmse": 52115.10303430894,
+        "num_folds": 5
+      },
+      "feature_importance": [
+        {
+          "feature": "arf_double",
+          "importance": 0.23431459821274445
+        },
+        {
+          "feature": "omv",
+          "importance": 0.14064865363675413
+        },
+        {
+          "feature": "power",
+          "importance": 0.09239423134854603
+        },
+        {
+          "feature": "mileage",
+          "importance": 0.07751981264120314
+        },
+        {
+          "feature": "car_age_years",
+          "importance": 0.0759548423753318
+        },
+        {
+          "feature": "coe",
+          "importance": 0.0713314927972205
+        },
+        {
+          "feature": "coe_months_left",
+          "importance": 0.06256942509601489
+        },
+        {
+          "feature": "power_to_weight",
+          "importance": 0.04396297016337295
+        },
+        {
+          "feature": "coe_premium_at_reg",
+          "importance": 0.03457448181565512
+        },
+        {
+          "feature": "road_tax",
+          "importance": 0.033405407493586635
+        },
+        {
+          "feature": "engine_cap",
+          "importance": 0.03079164454077925
+        },
+        {
+          "feature": "mileage_per_year",
+          "importance": 0.030445868659528978
+        },
+        {
+          "feature": "curb_weight",
+          "importance": 0.024684718152808604
+        },
+        {
+          "feature": "feature_17",
+          "importance": 0.010930990935406327
+        },
+        {
+          "feature": "owners",
+          "importance": 0.009606263827633797
+        }
+      ],
+      "is_best": false
+    },
+    "GBT": {
+      "train_metrics": {
+        "rmse": 1958.4511658353356,
+        "mae": 1469.2949133640086,
+        "r2": 0.9997746430964695,
+        "mse": 3835530.968961785
+      },
+      "test_metrics": {
+        "rmse": 89767.57392668855,
+        "mae": 24814.359598207102,
+        "r2": 0.7474882402123855,
+        "mse": 8058217328.683495
+      },
+      "cv_results": {
+        "avg_rmse": 71064.75212070128,
+        "num_folds": 5
+      },
+      "feature_importance": [
+        {
+          "feature": "arf_double",
+          "importance": 0.41140021047369996
+        },
+        {
+          "feature": "coe",
+          "importance": 0.13240742475251982
+        },
+        {
+          "feature": "mileage",
+          "importance": 0.08252166775630095
+        },
+        {
+          "feature": "car_age_years",
+          "importance": 0.0587464556526959
+        },
+        {
+          "feature": "engine_cap",
+          "importance": 0.04564952731292482
+        },
+        {
+          "feature": "curb_weight",
+          "importance": 0.04017820834999178
+        },
+        {
+          "feature": "power",
+          "importance": 0.03860863157011731
+        },
+        {
+          "feature": "power_to_weight",
+          "importance": 0.03576112735033848
+        },
+        {
+          "feature": "omv",
+          "importance": 0.02918020079535022
+        },
+        {
+          "feature": "mileage_per_year",
+          "importance": 0.028630090583497327
+        },
+        {
+          "feature": "coe_months_left",
+          "importance": 0.022460720821904347
+        },
+        {
+          "feature": "road_tax",
+          "importance": 0.02101676889929551
+        },
+        {
+          "feature": "coe_premium_at_reg",
+          "importance": 0.01876165295456976
+        },
+        {
+          "feature": "feature_17",
+          "importance": 0.010895656052949034
+        },
+        {
+          "feature": "owners",
+          "importance": 0.010572133635342582
+        }
+      ],
+      "is_best": false
+    }
+  }
+}
