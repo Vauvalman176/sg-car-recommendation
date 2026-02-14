@@ -170,5 +170,5 @@ if __name__ == "__main__":
         print("🎯 Next Steps:")
         print("   1. Use this data to enrich car listings")
         print("   2. Calculate historical COE trends")
-        print("   3. Merge with scraped data in PBDA module")
+        print("   3. Merge with scraped data in ML pipeline")
         print("="*80)
