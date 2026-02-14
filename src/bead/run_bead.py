@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-BEAD Module Runner
+Data Ingestion Runner
 Executes the complete data ingestion and profiling pipeline.
 """
 
@@ -16,7 +16,7 @@ from bead.utils import ensure_directory, print_header, print_section
 
 
 def main():
-    """Run the complete BEAD pipeline."""
+    """Run the complete data ingestion pipeline."""
 
     # Configuration
     BASE_PATH = "/Users/jai/Downloads/bigdata_project"
@@ -24,7 +24,7 @@ def main():
     COE_DATA_PATH = os.path.join(BASE_PATH, "data/coe/coe_bidding_results.csv")
     OUTPUT_PATH = os.path.join(BASE_PATH, "data/processed")
 
-    print_header("BEAD - BIG DATA INGESTION PIPELINE")
+    print_header("DATA INGESTION PIPELINE")
 
     # Ensure output directory exists
     ensure_directory(OUTPUT_PATH)
@@ -63,7 +63,7 @@ def main():
     save_profile_json(coe_profile, os.path.join(OUTPUT_PATH, "coe_profile.json"))
 
     # Summary
-    print_header("BEAD PIPELINE COMPLETE")
+    print_header("INGESTION PIPELINE COMPLETE")
     print(f"""
 Outputs Generated:
 ------------------
@@ -82,7 +82,7 @@ COE Data: {coe_df.count():,} records
 Next Steps:
 -----------
 1. Review profile reports for data quality
-2. Proceed to PBDA phase for feature engineering
+2. Proceed to ML pipeline for feature engineering
 3. Train CatBoost model for price prediction
 """)
 

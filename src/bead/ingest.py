@@ -115,7 +115,7 @@ def save_as_parquet(df: DataFrame, output_path: str, partition_by: str = None):
 def run_ingestion_pipeline(base_path: str):
     """Run complete ingestion: load CSVs, process, save as parquet."""
     print("="*60)
-    print("BEAD DATA INGESTION PIPELINE")
+    print("DATA INGESTION PIPELINE")
     print("="*60)
 
     # Create Spark session

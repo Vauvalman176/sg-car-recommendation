@@ -1,5 +1,5 @@
 """
-Utility functions for BEAD module.
+Utility functions for the data pipeline.
 """
 
 import os

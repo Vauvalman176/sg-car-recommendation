@@ -1,5 +1,5 @@
 """
-BEAD Module - Big Data Engineering & Analytics (Ingestion)
+Data ingestion & profiling module.
 Handles data loading, schema validation, and profiling for the car recommendation system.
 """
 

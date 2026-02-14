@@ -1,8 +1,8 @@
-# BEAD Module - Big Data Engineering & Analytics (Ingestion)
+# Data Ingestion & Profiling Module
 
 ## Overview
 
-The BEAD module handles data ingestion, schema validation, and profiling for the Singapore Car Recommendation System. It loads raw data from CSV files, validates schemas, generates quality reports, and saves data in Parquet format for efficient downstream processing.
+This module handles data ingestion, schema validation, and profiling for the Singapore Car Recommendation System. It loads raw data from CSV files, validates schemas, generates quality reports, and saves data in Parquet format for efficient downstream processing.
 
 ---
 
@@ -24,7 +24,7 @@ The BEAD module handles data ingestion, schema validation, and profiling for the
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         BEAD MODULE                              │
+│                    DATA INGESTION MODULE                          │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
@@ -340,7 +340,7 @@ Path does not exist
 
 ## Next Phase
 
-After BEAD completes, proceed to **PBDA (Processing Big Data Analytics)**:
+After ingestion completes, proceed to the ML pipeline:
 - Feature engineering
 - Financial calculations (PARF, depreciation)
 - CatBoost model training
@@ -351,6 +351,6 @@ See: `src/pbda/README.md`
 
 ## Author
 
-- **Module**: BEAD (Big Data Ingestion)
+- **Module**: Data Ingestion
 - **Project**: Singapore Car Recommendation System
 - **Date**: January 2026
