@@ -29,9 +29,9 @@ bigdata_project/
 │   ├── 03_pbda_processing.ipynb
 │   └── 04_rcs_recommender.ipynb
 ├── src/                        # Source code (to be created)
-│   ├── bead/                   # BEAD module
-│   ├── pbda/                   # PBDA module
-│   └── rcs/                    # RCS module
+│   ├── bead/                   # Data ingestion module
+│   ├── pbda/                   # ML pipeline module
+│   └── rcs/                    # Recommender module
 └── docs/                       # Documentation (to be created)
     ├── citations.md            # Data source citations
     └── methodology.md          # Research methodology
@@ -84,17 +84,17 @@ bigdata_project/
 2. Move scraped data to `data/raw/`
 3. Document data sources in `docs/citations.md`
 
-### Phase 3: BEAD Module
+### Phase 3: Data Ingestion
 1. Set up PySpark environment
 2. Build data ingestion pipeline
 3. Simulate HDFS/Sqoop operations
 
-### Phase 4: PBDA Module
+### Phase 4: ML Pipeline
 1. Data cleaning and preprocessing
 2. Financial calculator implementation
 3. ML model training (Linear, RF, GBT)
 
-### Phase 5: RCS Module
+### Phase 5: Recommender
 1. Feature vectorization
 2. Cosine similarity recommender
 3. Budget filtering logic
@@ -207,9 +207,9 @@ python3 main.py
 
 **Pending**:
 - ⏳ COE data download
-- ⏳ BEAD module implementation
-- ⏳ PBDA module implementation
-- ⏳ RCS module implementation
+- ⏳ Data ingestion module
+- ⏳ ML pipeline module
+- ⏳ Recommender module
 - ⏳ Testing and evaluation
 - ⏳ Final documentation
 

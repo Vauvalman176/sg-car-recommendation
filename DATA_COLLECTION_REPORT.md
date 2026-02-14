@@ -65,7 +65,7 @@
 | Missing COE | 7 | 3.9% | Medium |
 | Missing curb_weight | 3 | 1.7% | Low |
 
-**Note**: "N.A." values and missing data are common in real-world scraping and will be handled in the PBDA cleaning module.
+**Note**: "N.A." values and missing data are common in real-world scraping and will be handled in the data cleaning module.
 
 ---
 
@@ -139,12 +139,12 @@ Reg Date: 29-Apr-2021
 ### 1. Post-Processing Error
 **Issue**: Built-in processing script failed due to price format
 **Cause**: Price stored as string (e.g., "80800") instead of numeric
-**Solution**: Will be handled in PBDA module with proper type conversion
+**Solution**: Will be handled in the cleaning module with proper type conversion
 
 ### 2. Missing Values
 **Issue**: ~20-27% missing values in some fields
 **Cause**: Some listings don't display all information
-**Solution**: Imputation strategies in PBDA module
+**Solution**: Imputation strategies in the cleaning module
 
 ---
 
@@ -174,7 +174,7 @@ The test scraping was successful and collected high-quality, diverse data suitab
 - **Command**: `python3 run_scraper.py`
 
 ### Option B: Proceed with Test Data
-- **Action**: Start building BEAD/PBDA/RCS modules with 179 rows
+- **Action**: Start building processing modules with 179 rows
 - **Benefits**:
   - Faster development iteration
   - Can test all modules quickly
@@ -207,4 +207,4 @@ The test scraping was successful and collected high-quality, diverse data suitab
 
 **Report Generated**: January 28, 2026
 **Data Quality**: ✅ APPROVED FOR PROCESSING
-**Recommendation**: Proceed to BEAD/PBDA modules
+**Recommendation**: Proceed to data processing modules

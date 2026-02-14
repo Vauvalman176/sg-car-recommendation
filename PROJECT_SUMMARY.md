@@ -23,12 +23,12 @@ Help Singaporean drivers find affordable replacement cars by calculating trade-i
 
 ## 🏗️ Architecture
 
-### **BEAD (Ingestion)**
+### **Data Ingestion**
 - Load Kaggle Singapore used car dataset
 - Load data.gov.sg COE historical data
 - Simulate HDFS/Sqoop ingestion using PySpark
 
-### **PBDA (Processing & ML)**
+### **Processing & ML**
 **Data Cleaning:**
 - Clean price, depreciation, COE fields
 - Parse "4yrs 5mths" → months
@@ -49,7 +49,7 @@ Help Singaporean drivers find affordable replacement cars by calculating trade-i
 - Scrap/resale value
 - Price anomaly detection (overpriced/underpriced)
 
-### **RCS (Recommender)**
+### **Recommender**
 - Content-based filtering (cosine similarity)
 - Multi-stage filtering:
   1. Hard constraints (category, COE > 5yrs, budget)
@@ -116,8 +116,8 @@ Help Singaporean drivers find affordable replacement cars by calculating trade-i
 - [x] Datasets identified
 - [x] ML models selected
 - [x] Phase 1: Data Collection (5,089 listings + 1,900 COE records)
-- [x] Phase 2: BEAD - Data ingestion, profiling, Parquet storage
-- [x] Phase 3: PBDA - Feature engineering, 3 ML models (LR best, R2=0.87), anomaly detection
-- [x] Phase 4: RCS - Cosine similarity recommender with constraint filtering
+- [x] Phase 2: Data ingestion, profiling, Parquet storage
+- [x] Phase 3: Feature engineering, 3 ML models (LR best, R2=0.87), anomaly detection
+- [x] Phase 4: Cosine similarity recommender with constraint filtering
 - [x] Testing & evaluation (5-fold CV, train/test split)
 - [x] Documentation (README, phase docs, module READMEs)

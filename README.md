@@ -18,12 +18,12 @@ An intelligent platform to help Singaporean drivers navigate complex vehicle own
 
 ## Pipeline
 
-| Phase | Module | Description |
-|-------|--------|-------------|
-| 1 | Data Collection | 5,089 car listings scraped + 1,900 COE records from API |
-| 2 | BEAD | PySpark data ingestion, schema validation, profiling |
-| 3 | PBDA | Feature engineering, ML model training (LR, RF, GBT) |
-| 4 | RCS | Content-based recommendation engine |
+| Phase | Description |
+|-------|-------------|
+| 1 - Data Collection | 5,089 car listings scraped + 1,900 COE records from API |
+| 2 - Data Ingestion | PySpark ingestion, schema validation, profiling |
+| 3 - ML Pipeline | Feature engineering, model training (LR, RF, GBT) |
+| 4 - Recommender | Content-based recommendation engine |
 
 ---
 
@@ -34,27 +34,27 @@ sg-car-recommendation/
 ├── data/
 │   ├── raw/                     # Raw scraped CSVs
 │   ├── coe/                     # COE API data
-│   ├── processed/               # BEAD output (Parquet + profiles)
+│   ├── processed/               # Cleaned Parquet files + profiles
 │   ├── pbda_output/             # Models, predictions, reports
 │   └── rcs_output/              # Recommendation reports
 │
 ├── src/
-│   ├── bead/                    # Phase 2: Ingestion & profiling
+│   ├── bead/                    # Data ingestion & profiling
 │   │   ├── ingest.py
 │   │   ├── profiler.py
 │   │   ├── schema.py
 │   │   └── utils.py
-│   ├── pbda/                    # Phase 3: ML pipeline
+│   ├── pbda/                    # Feature engineering & ML
 │   │   ├── features.py
 │   │   ├── financial.py
 │   │   ├── model.py
 │   │   └── evaluate.py
-│   └── rcs/                     # Phase 4: Recommender
+│   └── rcs/                     # Recommender engine
 │       ├── filters.py
 │       ├── similarity.py
 │       └── recommender.py
 │
-├── webscrap_sgcarmart/          # Phase 1: Web scraper (see Acknowledgements)
+├── webscrap_sgcarmart/          # Web scraper (see Acknowledgements)
 │   ├── auto_scraper.py
 │   └── tools.py
 │
@@ -85,13 +85,13 @@ java -version
 ```bash
 cd src/
 
-# Phase 2: Data ingestion & profiling
+# Step 1: Data ingestion & profiling
 python3 -m bead.run_bead
 
-# Phase 3: Feature engineering & ML training
+# Step 2: Feature engineering & ML training
 python3 -m pbda.run_pbda
 
-# Phase 4: Recommendations
+# Step 3: Recommendations
 python3 -m rcs.run_rcs
 ```
 
@@ -160,7 +160,7 @@ open data/rcs_output/recommendation_report.html     # Recommendations
 
 ## Acknowledgements
 
-- **Web scraping tool**: [webscrap_sgcarmart](https://github.com/msamhz/webscrap_sgcarmart) by [msamhz](https://github.com/msamhz) — used for Phase 1 data collection from SGCarMart. The scraper handles pagination, data extraction, and basic preprocessing of car listing pages.
+- **Web scraping tool**: [webscrap_sgcarmart](https://github.com/msamhz/webscrap_sgcarmart) by [msamhz](https://github.com/msamhz) — used for data collection from SGCarMart. The scraper handles pagination, data extraction, and basic preprocessing of car listing pages.
 - **COE data**: [Singapore Land Transport Authority](https://data.gov.sg) via the data.gov.sg open data API.
 - **Financial formulas**: Based on LTA's official PARF rebate schedule and MAS loan regulations.
 
