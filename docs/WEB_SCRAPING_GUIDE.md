@@ -318,7 +318,7 @@ Once data collection is complete:
 2. ✅ Move files to proper project directories
 3. ✅ Document collection parameters
 4. ✅ Begin COE data download from data.gov.sg
-5. ✅ Start BEAD module (PySpark ingestion)
+5. ✅ Start PySpark ingestion module
 
 ---
 

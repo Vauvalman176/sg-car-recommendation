@@ -11,9 +11,9 @@ This document provides a comprehensive overview of all project phases, their pur
 1. [Project Overview](#project-overview)
 2. [Phase Summary](#phase-summary)
 3. [Phase 1: Data Collection](#phase-1-data-collection)
-4. [Phase 2: BEAD (Ingestion)](#phase-2-bead-ingestion)
-5. [Phase 3: PBDA (Processing & ML)](#phase-3-pbda-processing--ml)
-6. [Phase 4: RCS (Recommender)](#phase-4-rcs-recommender)
+4. [Phase 2: Data Ingestion](#phase-2-data-ingestion)
+5. [Phase 3: Processing & ML](#phase-3-processing--ml)
+6. [Phase 4: Recommender](#phase-4-recommender)
 7. [Quick Start Guide](#quick-start-guide)
 8. [Data Flow Diagram](#data-flow-diagram)
 
@@ -44,9 +44,9 @@ Build an intelligent platform to help Singaporean drivers find affordable replac
 | Phase | Module | Status | Description |
 |-------|--------|--------|-------------|
 | 1 | Data Collection | ✅ Complete | Web scraping SGCarMart + COE API |
-| 2 | BEAD | ✅ Complete | Data ingestion, validation, profiling |
-| 3 | PBDA | ✅ Complete | Feature engineering, ML training, price prediction |
-| 4 | RCS | ✅ Complete | Recommendation engine with cosine similarity |
+| 2 | Data Ingestion | ✅ Complete | Data ingestion, validation, profiling |
+| 3 | Processing & ML | ✅ Complete | Feature engineering, ML training, price prediction |
+| 4 | Recommender | ✅ Complete | Recommendation engine with cosine similarity |
 
 ---
 
@@ -115,7 +115,7 @@ python3 download_coe_data.py
 
 ---
 
-## Phase 2: BEAD (Ingestion)
+## Phase 2: Data Ingestion
 
 ### Purpose
 Load cleaned data into PySpark, validate schemas, profile data quality, and save in optimized Parquet format.
@@ -168,7 +168,7 @@ python3 -m bead.run_bead
 
 ---
 
-## Phase 3: PBDA (Processing & ML)
+## Phase 3: Processing & ML
 
 ### Purpose
 Feature engineering, financial calculations, and ML model training for price prediction.
@@ -257,7 +257,7 @@ Cars flagged based on +/-15% deviation from predicted price:
 
 ---
 
-## Phase 4: RCS (Recommender)
+## Phase 4: Recommender
 
 ### Purpose
 Content-based recommendation system to suggest similar cars within user constraints, with trade-in value calculation and deal detection.
@@ -350,13 +350,13 @@ java -version
 ```bash
 cd /Users/jai/Downloads/bigdata_project/src
 
-# Phase 2: BEAD (Data Ingestion & Profiling)
+# Phase 2: Data Ingestion & Profiling
 python3 -m bead.run_bead
 
-# Phase 3: PBDA (Feature Engineering & ML)
+# Phase 3: Feature Engineering & ML
 python3 -m pbda.run_pbda
 
-# Phase 4: RCS (Recommendations)
+# Phase 4: Recommendations
 python3 -m rcs.run_rcs
 ```
 
@@ -395,7 +395,7 @@ open data/rcs_output/recommendation_report.html
 │  └──────┬───────┘    └──────┬───────┘                                  │
 │         └────────┬───────────┘                                          │
 │                  ▼                                                       │
-│  PHASE 2: BEAD (INGESTION) ✅                                           │
+│  PHASE 2: DATA INGESTION ✅                                              │
 │  ┌─────────────────────────────────┐                                   │
 │  │  • Load into PySpark            │                                   │
 │  │  • Schema validation            │                                   │
@@ -403,7 +403,7 @@ open data/rcs_output/recommendation_report.html
 │  │  • Save as Parquet              │                                   │
 │  └──────────────┬──────────────────┘                                   │
 │                  ▼                                                       │
-│  PHASE 3: PBDA (PROCESSING & ML) ✅                                     │
+│  PHASE 3: PROCESSING & ML ✅                                             │
 │  ┌─────────────────────────────────┐                                   │
 │  │  • Feature engineering          │                                   │
 │  │  • Financial calculations       │                                   │
@@ -412,7 +412,7 @@ open data/rcs_output/recommendation_report.html
 │  │  • Anomaly detection            │                                   │
 │  └──────────────┬──────────────────┘                                   │
 │                  ▼                                                       │
-│  PHASE 4: RCS (RECOMMENDER) ✅                                          │
+│  PHASE 4: RECOMMENDER ✅                                                 │
 │  ┌─────────────────────────────────┐                                   │
 │  │  • Trade-in calculation         │                                   │
 │  │  • Constraint filtering         │                                   │

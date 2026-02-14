@@ -123,10 +123,10 @@ This project uses the webscrap_sgcarmart tool for **data acquisition only**,
 representing approximately 10% of the total project scope. The remaining 90%
 consists of original work including:
 
-- Data cleaning and preprocessing pipelines (BEAD module)
-- Financial calculation algorithms (PBDA module)
-- Machine learning model implementation (PBDA module)
-- Recommender system design and implementation (RCS module)
+- Data cleaning and preprocessing pipelines
+- Financial calculation algorithms
+- Machine learning model implementation
+- Recommender system design and implementation
 - Analysis, interpretation, and documentation
 
 All code beyond data collection is original and developed specifically
