@@ -1,4 +1,4 @@
-"""PBDA - Processing Big Data Analytics module."""
+"""Feature engineering & ML pipeline module."""
 
 from .features import transform_features, get_feature_names
 from .financial import add_financial_columns

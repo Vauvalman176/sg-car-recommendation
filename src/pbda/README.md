@@ -1,10 +1,10 @@
-# PBDA Module - Processing Big Data Analytics
+# Feature Engineering & ML Pipeline
 
 ## Overview
 
-The PBDA module handles feature engineering, financial calculations, ML model training, and price prediction for the Singapore car recommendation system.
+This module handles feature engineering, financial calculations, ML model training, and price prediction for the Singapore car recommendation system.
 
-**Input**: Parquet files from BEAD phase (`cars.parquet`, `coe.parquet`)
+**Input**: Parquet files from ingestion phase (`cars.parquet`, `coe.parquet`)
 **Output**: Trained models, predictions with anomaly flags, comparison reports
 
 ---
@@ -33,7 +33,7 @@ python3 -m pbda.run_pbda
 
 ## Pipeline Steps
 
-1. Load Parquet data (from BEAD output)
+1. Load Parquet data (from ingestion output)
 2. Calculate financial metrics (PARF, COE rebate, loan, depreciation)
 3. Feature engineering (filter, impute, join COE premium, engineer features)
 4. Build ML pipeline (StringIndexer -> OneHotEncoder -> VectorAssembler -> StandardScaler)

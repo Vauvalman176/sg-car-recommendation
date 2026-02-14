@@ -139,7 +139,7 @@ def generate_model_report(comparison, output_path):
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PBDA Model Comparison Report</title>
+    <title>Model Comparison Report</title>
     <style>
         body {{ font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }}
         .container {{ max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }}
@@ -158,7 +158,7 @@ def generate_model_report(comparison, output_path):
 </head>
 <body>
     <div class="container">
-        <h1>PBDA Model Comparison Report</h1>
+        <h1>Model Comparison Report</h1>
         <p><strong>Generated:</strong> {comparison['compared_at']}</p>
 
         <div class="summary">

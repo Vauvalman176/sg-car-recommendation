@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Run the full PBDA pipeline: financial calcs -> feature engineering ->
+Run the full ML pipeline: financial calcs -> feature engineering ->
 model training (LR, RF, GBT) -> evaluation -> predictions.
 """
 
@@ -35,7 +35,7 @@ def main():
     COE_PARQUET_PATH = os.path.join(BASE_PATH, "data/processed/coe.parquet")
     OUTPUT_PATH = os.path.join(BASE_PATH, "data/pbda_output")
 
-    print_header("PBDA - PROCESSING BIG DATA ANALYTICS PIPELINE")
+    print_header("ML PIPELINE - FEATURE ENGINEERING & PRICE PREDICTION")
 
     ensure_directory(OUTPUT_PATH)
     ensure_directory(os.path.join(OUTPUT_PATH, "models"))
@@ -44,7 +44,7 @@ def main():
     print_section("Step 1: Initializing Spark")
     spark = create_spark_session("CarRecommendation_PBDA")
 
-    # Step 2: Load data from BEAD output
+    # Step 2: Load processed parquet data
     print_section("Step 2: Loading Parquet Data")
     car_df = spark.read.parquet(CARS_PARQUET_PATH)
     print(f"Car records: {format_number(car_df.count())}")
@@ -186,7 +186,7 @@ def main():
     )
 
     best_test = comparison["models"][best_model_name]["test_metrics"]
-    print_header("PBDA PIPELINE COMPLETE")
+    print_header("ML PIPELINE COMPLETE")
     print(f"""
 Best Model: {best_model_name}
   Test R2:   {best_test['r2']:.4f}
