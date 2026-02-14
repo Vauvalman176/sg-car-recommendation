@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Run the RCS recommendation pipeline.
+Run the recommendation pipeline.
 Demo: Honda Vezel owner looking for a replacement car.
 """
 
@@ -22,7 +22,7 @@ def main():
     PREDICTIONS_PATH = os.path.join(BASE_PATH, "data/pbda_output/predictions.parquet")
     OUTPUT_PATH = os.path.join(BASE_PATH, "data/rcs_output")
 
-    print_header("RCS - RECOMMENDER & CONSUMER SYSTEM")
+    print_header("CAR RECOMMENDATION ENGINE")
     ensure_directory(OUTPUT_PATH)
 
     # --- Demo use case: Jane's Honda Vezel ---
@@ -53,7 +53,7 @@ def main():
     print_section("Step 1: Initializing Spark")
     spark = create_spark_session("CarRecommendation_RCS")
 
-    # Load predictions from PBDA
+    # Load predictions from ML pipeline
     print_section("Step 2: Loading Predictions")
     predictions_df = spark.read.parquet(PREDICTIONS_PATH)
     print(f"Cars available: {format_number(predictions_df.count())}")
@@ -99,7 +99,7 @@ def main():
     save_results_json(results_luxury, os.path.join(OUTPUT_PATH, "recommendation_results_luxury.json"))
 
     # Done
-    print_header("RCS PIPELINE COMPLETE")
+    print_header("RECOMMENDATION PIPELINE COMPLETE")
     print(f"""
 Car: {user_car['carmodel']}
 Trade-in: ${results['user_summary']['scrap_value']:,.2f}

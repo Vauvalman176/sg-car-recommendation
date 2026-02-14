@@ -1,10 +1,10 @@
-# RCS Module - Recommender & Consumer System
+# Recommender Engine
 
 ## Overview
 
-The RCS module is a content-based car recommendation engine. Given a user's current car, it calculates trade-in value, filters candidates by constraints, ranks by cosine similarity, and outputs top-K recommendations with net upgrade costs and deal flags.
+A content-based car recommendation engine. Given a user's current car, it calculates trade-in value, filters candidates by constraints, ranks by cosine similarity, and outputs top-K recommendations with net upgrade costs and deal flags.
 
-**Input**: `data/pbda_output/predictions.parquet` (from Phase 3)
+**Input**: `data/pbda_output/predictions.parquet` (from the ML pipeline)
 **Output**: HTML report + JSON results in `data/rcs_output/`
 
 ---

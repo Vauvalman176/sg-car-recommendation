@@ -16,7 +16,7 @@ from .similarity import (
 )
 
 
-# same PARF table as in pbda.financial (duplicated here to keep RCS standalone)
+# same PARF table as in financial.py (duplicated here to keep recommender standalone)
 PARF_REBATE_TABLE = [
     (5, 0.75),
     (6, 0.70),
@@ -192,7 +192,7 @@ def generate_recommendation_report(results, output_path):
 <!DOCTYPE html>
 <html>
 <head>
-    <title>RCS Recommendation Report</title>
+    <title>Car Recommendation Report</title>
     <style>
         body {{ font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }}
         .container {{ max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }}
