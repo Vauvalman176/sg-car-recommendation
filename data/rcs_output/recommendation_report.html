@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RCS Recommendation Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #333; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; }
+        h2 { color: #666; margin-top: 30px; }
+        .summary { display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap; }
+        .summary-card { background: #f8f9fa; padding: 20px; border-radius: 8px; flex: 1; text-align: center; min-width: 150px; }
+        .summary-card h3 { margin: 0; color: #4CAF50; font-size: 1.8em; }
+        .summary-card p { margin: 5px 0 0 0; color: #666; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th { background: #4CAF50; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #f5f5f5; }
+        .user-info { background: #e8f5e9; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .constraints { background: #fff3e0; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .constraints ul { margin: 5px 0; padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Recommendation Report</h1>
+        <p><strong>Generated:</strong> 2026-02-13T23:03:45.598878</p>
+
+        <div class="user-info">
+            <h2 style="margin-top:0;">Your Car: Honda Vezel 1.5A</h2>
+            <div class="summary">
+                <div class="summary-card">
+                    <h3>$29,750</h3>
+                    <p>Trade-in Value</p>
+                </div>
+                <div class="summary-card">
+                    <h3>$9,750</h3>
+                    <p>PARF Rebate</p>
+                </div>
+                <div class="summary-card">
+                    <h3>$20,000</h3>
+                    <p>COE Rebate</p>
+                </div>
+                <div class="summary-card">
+                    <h3>48m</h3>
+                    <p>COE Remaining</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="constraints">
+            <strong>Search Constraints:</strong>
+            <ul><li>Min COE: 60 months</li><li>Max Monthly: $1,500</li><li>Max Price: $250,000</li></ul>
+            <p>Candidates found: 1,094</p>
+        </div>
+
+        <h2>Top 5 Recommendations</h2>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Car Model</th>
+                <th>Price</th>
+                <th>Similarity</th>
+                <th>Net Upgrade Cost</th>
+                <th>Monthly</th>
+                <th>COE Left</th>
+                <th>Deal</th>
+            </tr>
+            
+            <tr>
+                <td><strong>#1</strong></td>
+                <td><strong>Opel Crossland 1.2A X Turbo</strong><br>
+                    <small>SUV | Auto | Petrol</small></td>
+                <td>$79,800</td>
+                <td>0.9994</td>
+                <td>$50,050</td>
+                <td>$794</td>
+                <td>72 months</td>
+                <td><span style="color:#f39c12;font-weight:bold;">FAIR</span></td>
+            </tr>
+            <tr>
+                <td><strong>#2</strong></td>
+                <td><strong>Peugeot 2008 1.2A PureTech EAT8 Allure Premium</strong><br>
+                    <small>SUV | Auto | Petrol</small></td>
+                <td>$90,800</td>
+                <td>0.9993</td>
+                <td>$61,050</td>
+                <td>$775</td>
+                <td>69 months</td>
+                <td><span style="color:#f39c12;font-weight:bold;">FAIR</span></td>
+            </tr>
+            <tr>
+                <td><strong>#3</strong></td>
+                <td><strong>Suzuki Vitara 1.4A GLX Sunroof</strong><br>
+                    <small>SUV | Auto | Petrol</small></td>
+                <td>$89,800</td>
+                <td>0.9992</td>
+                <td>$60,050</td>
+                <td>$766</td>
+                <td>60 months</td>
+                <td><span style="color:#f39c12;font-weight:bold;">FAIR</span></td>
+            </tr>
+            <tr>
+                <td><strong>#4</strong></td>
+                <td><strong>Honda Vezel Hybrid 1.5A</strong><br>
+                    <small>SUV | Auto | Petrol-Electric</small></td>
+                <td>$93,800</td>
+                <td>0.9990</td>
+                <td>$64,050</td>
+                <td>$800</td>
+                <td>67 months</td>
+                <td><span style="color:#f39c12;font-weight:bold;">FAIR</span></td>
+            </tr>
+            <tr>
+                <td><strong>#5</strong></td>
+                <td><strong>MINI Cooper Clubman 1.5A</strong><br>
+                    <small>Hatchback | Auto | Petrol</small></td>
+                <td>$118,800</td>
+                <td>0.9989</td>
+                <td>$89,050</td>
+                <td>$1,014</td>
+                <td>61 months</td>
+                <td><span style="color:#f39c12;font-weight:bold;">FAIR</span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
