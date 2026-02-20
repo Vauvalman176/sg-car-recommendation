@@ -1,0 +1,458 @@
+{
+  "name": "Car Listings",
+  "profiled_at": "2026-01-30T19:16:21.453664",
+  "total_rows": 5089,
+  "total_columns": 28,
+  "columns": {
+    "price": {
+      "data_type": "DoubleType()",
+      "null_count": 31,
+      "null_percentage": 0.61,
+      "distinct_count": 1659,
+      "mean": 117076.05,
+      "stddev": 141645.04,
+      "min": 1999.0,
+      "max": 2600000.0,
+      "percentile_25": 49555.0,
+      "percentile_50": 83888.0,
+      "percentile_75": 138555.0
+    },
+    "transmission": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 2,
+      "top_values": [
+        {
+          "value": "Auto",
+          "count": 4784
+        },
+        {
+          "value": "Manual",
+          "count": 305
+        }
+      ]
+    },
+    "fuel_type": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 5,
+      "top_values": [
+        {
+          "value": "Petrol",
+          "count": 3487
+        },
+        {
+          "value": "Petrol-Electric",
+          "count": 750
+        },
+        {
+          "value": "Diesel",
+          "count": 476
+        },
+        {
+          "value": "Electric",
+          "count": 374
+        },
+        {
+          "value": "Diesel-Electric",
+          "count": 2
+        }
+      ]
+    },
+    "curb_weight": {
+      "data_type": "DoubleType()",
+      "null_count": 67,
+      "null_percentage": 1.32,
+      "distinct_count": 599,
+      "mean": 1599.06,
+      "stddev": 631.67,
+      "min": 740.0,
+      "max": 17880.0,
+      "percentile_25": 1345.0,
+      "percentile_50": 1520.0,
+      "percentile_75": 1755.0
+    },
+    "power": {
+      "data_type": "DoubleType()",
+      "null_count": 650,
+      "null_percentage": 12.77,
+      "distinct_count": 275,
+      "mean": 145.75,
+      "stddev": 84.0,
+      "min": 29.4,
+      "max": 735.0,
+      "percentile_25": 93.8,
+      "percentile_50": 115.0,
+      "percentile_75": 162.0
+    },
+    "road_tax": {
+      "data_type": "DoubleType()",
+      "null_count": 622,
+      "null_percentage": 12.22,
+      "distinct_count": 359,
+      "mean": 1509.24,
+      "stddev": 1493.78,
+      "min": 70.0,
+      "max": 12375.0,
+      "percentile_25": 684.0,
+      "percentile_50": 1113.0,
+      "percentile_75": 1630.0
+    },
+    "coe": {
+      "data_type": "DoubleType()",
+      "null_count": 195,
+      "null_percentage": 3.83,
+      "distinct_count": 1266,
+      "mean": 54999.04,
+      "stddev": 27528.36,
+      "min": 10.0,
+      "max": 158004.0,
+      "percentile_25": 35411.0,
+      "percentile_50": 46048.0,
+      "percentile_75": 63002.0
+    },
+    "omv": {
+      "data_type": "DoubleType()",
+      "null_count": 20,
+      "null_percentage": 0.39,
+      "distinct_count": 3918,
+      "mean": 43174.51,
+      "stddev": 48428.6,
+      "min": 933.0,
+      "max": 671098.0,
+      "percentile_25": 21690.0,
+      "percentile_50": 30798.0,
+      "percentile_75": 43967.0
+    },
+    "arf": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 3638,
+      "mean": 45974.26,
+      "stddev": 82200.61,
+      "min": 0,
+      "max": 1416420,
+      "percentile_25": 12556,
+      "percentile_50": 26938,
+      "percentile_75": 47523
+    },
+    "mileage": {
+      "data_type": "DoubleType()",
+      "null_count": 1017,
+      "null_percentage": 19.98,
+      "distinct_count": 1605,
+      "mean": 83995.16,
+      "stddev": 48008.46,
+      "min": 1.0,
+      "max": 400000.0,
+      "percentile_25": 50100.0,
+      "percentile_50": 83000.0,
+      "percentile_75": 112000.0
+    },
+    "owners": {
+      "data_type": "DoubleType()",
+      "null_count": 4,
+      "null_percentage": 0.08,
+      "distinct_count": 6,
+      "mean": 2.14,
+      "stddev": 1.42,
+      "min": 1.0,
+      "max": 6.0,
+      "percentile_25": 1.0,
+      "percentile_50": 2.0,
+      "percentile_75": 3.0
+    },
+    "dealer": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 615,
+      "top_values": [
+        {
+          "value": "Platinum Motoring",
+          "count": 330
+        },
+        {
+          "value": "Direct Owner",
+          "count": 178
+        },
+        {
+          "value": "1",
+          "count": 108
+        },
+        {
+          "value": "SG Motor Link Pte Ltd",
+          "count": 100
+        },
+        {
+          "value": "Precision Automobile Pte Ltd",
+          "count": 88
+        }
+      ]
+    },
+    "dereg_value": {
+      "data_type": "DoubleType()",
+      "null_count": 263,
+      "null_percentage": 5.17,
+      "distinct_count": 4120,
+      "mean": 51117.19,
+      "stddev": 60829.26,
+      "min": 27.0,
+      "max": 1138837.0,
+      "percentile_25": 17704.0,
+      "percentile_50": 33435.0,
+      "percentile_75": 66108.0
+    },
+    "engine_cap": {
+      "data_type": "DoubleType()",
+      "null_count": 374,
+      "null_percentage": 7.35,
+      "distinct_count": 228,
+      "mean": 2038.4,
+      "stddev": 993.98,
+      "min": 0.0,
+      "max": 15681.0,
+      "percentile_25": 1496.0,
+      "percentile_50": 1797.0,
+      "percentile_75": 1999.0
+    },
+    "reg_date": {
+      "data_type": "StringType()",
+      "null_count": 5,
+      "null_percentage": 0.1,
+      "distinct_count": 2779,
+      "top_values": [
+        {
+          "value": "2018-06-29",
+          "count": 12
+        },
+        {
+          "value": "2018-11-30",
+          "count": 11
+        },
+        {
+          "value": "2017-03-31",
+          "count": 11
+        },
+        {
+          "value": "2020-09-30",
+          "count": 10
+        },
+        {
+          "value": "2021-10-29",
+          "count": 10
+        }
+      ]
+    },
+    "carmodel": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 1908,
+      "top_values": [
+        {
+          "value": "Mercedes-Benz C-Class C180 Avantgarde",
+          "count": 50
+        },
+        {
+          "value": "Honda Civic 1.6A VTi",
+          "count": 46
+        },
+        {
+          "value": "Honda N-Van Turbo Style Fun Honda Sensing",
+          "count": 44
+        },
+        {
+          "value": "Toyota Dyna 150 3.0M",
+          "count": 40
+        },
+        {
+          "value": "Honda Vezel 1.5A X",
+          "count": 36
+        }
+      ]
+    },
+    "type_of_vehicle": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 11,
+      "top_values": [
+        {
+          "value": "SUV",
+          "count": 1425
+        },
+        {
+          "value": "Luxury Sedan",
+          "count": 940
+        },
+        {
+          "value": "Sports Car",
+          "count": 557
+        },
+        {
+          "value": "Mid-Sized Sedan",
+          "count": 540
+        },
+        {
+          "value": "MPV",
+          "count": 480
+        }
+      ]
+    },
+    "url": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 4817,
+      "top_values": [
+        {
+          "value": "https://www.sgcarmart.com/used-cars/info/audi-a1-sportback-14a-1423454/?dl=2563&utm_content=SLeligible",
+          "count": 1
+        },
+        {
+          "value": "https://www.sgcarmart.com/used-cars/info/mercedes-benz-gla-class-gla180-urban-1465481/?dl=3730",
+          "count": 1
+        },
+        {
+          "value": "https://www.sgcarmart.com/used-cars/info/subaru-forester-20i-l-sunroof-1453741/?dl=4932",
+          "count": 1
+        },
+        {
+          "value": "https://www.sgcarmart.com/used-cars/info/toyota-vios-15a-e-1458626/?dl=3730",
+          "count": 1
+        },
+        {
+          "value": "https://www.sgcarmart.com/used-cars/info/porsche-macan-20a-pdk-1441336/?dl=3969&utm_content=SLeligible",
+          "count": 1
+        }
+      ]
+    },
+    "coe_expiry": {
+      "data_type": "StringType()",
+      "null_count": 5,
+      "null_percentage": 0.1,
+      "distinct_count": 2637,
+      "top_values": [
+        {
+          "value": "2028-06-29",
+          "count": 12
+        },
+        {
+          "value": "2028-11-30",
+          "count": 11
+        },
+        {
+          "value": "2027-03-31",
+          "count": 11
+        },
+        {
+          "value": "2031-10-29",
+          "count": 10
+        },
+        {
+          "value": "2031-11-30",
+          "count": 10
+        }
+      ]
+    },
+    "coe_months_left": {
+      "data_type": "DoubleType()",
+      "null_count": 5,
+      "null_percentage": 0.1,
+      "distinct_count": 295,
+      "mean": 29.03,
+      "stddev": 68.08,
+      "min": -606.0,
+      "max": 120.0,
+      "percentile_25": 10.0,
+      "percentile_50": 36.0,
+      "percentile_75": 69.0
+    },
+    "max_loan_months": {
+      "data_type": "DoubleType()",
+      "null_count": 5,
+      "null_percentage": 0.1,
+      "distinct_count": 257,
+      "mean": 25.75,
+      "stddev": 64.67,
+      "min": -606.0,
+      "max": 84.0,
+      "percentile_25": 10.0,
+      "percentile_50": 36.0,
+      "percentile_75": 69.0
+    },
+    "min_downpayment_pct": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 2,
+      "mean": 38.01,
+      "stddev": 3.99,
+      "min": 30,
+      "max": 40,
+      "percentile_25": 40,
+      "percentile_50": 40,
+      "percentile_75": 40
+    },
+    "max_loan_pct": {
+      "data_type": "IntegerType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 2,
+      "mean": 61.99,
+      "stddev": 3.99,
+      "min": 60,
+      "max": 70,
+      "percentile_25": 60,
+      "percentile_50": 60,
+      "percentile_75": 60
+    },
+    "can_loan_full_coe": {
+      "data_type": "BooleanType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 2
+    },
+    "reg_date_parsed": {
+      "data_type": "DateType()",
+      "null_count": 5,
+      "null_percentage": 0.1,
+      "distinct_count": 2499
+    },
+    "car_age_years": {
+      "data_type": "DoubleType()",
+      "null_count": 5,
+      "null_percentage": 0.1,
+      "distinct_count": 2516,
+      "mean": 7.59,
+      "stddev": 5.67,
+      "min": 0.010951403148528405,
+      "max": 60.492813141683776,
+      "percentile_25": 4.1505817932922655,
+      "percentile_50": 6.880219028062971,
+      "percentile_75": 9.026694045174539
+    },
+    "data_source": {
+      "data_type": "StringType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 1,
+      "top_values": [
+        {
+          "value": "sgcarmart",
+          "count": 5089
+        }
+      ]
+    },
+    "ingestion_timestamp": {
+      "data_type": "DateType()",
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "distinct_count": 1
+    }
+  }
+}
